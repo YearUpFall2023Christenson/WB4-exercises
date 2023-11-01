@@ -3,8 +3,8 @@ function getMealCost(order){
 
     let totalcost = 0;
 
-    for( let i = 0 ; i < order.length ; i++){
-        let thisorderitem = order[i];
+    for( let indexOfOrder = 0 ; indexOfOrder < order.length ; indexOfOrder++){
+        let thisorderitem = order[indexOfOrder];
         let thisItemCost = thisorderitem.price;
         totalcost = totalcost + thisItemCost;
     }
